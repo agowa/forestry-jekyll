@@ -28,7 +28,7 @@ npm update
 bundle config set --local path vendor/bundle
 bundle install
 
-if [ "${JEKYLL_LIVE_RELOAD}" == "true" ]
+if [ "${JEKYLL_LIVE_RELOAD}" = "true" ]
 then
     exec bundle exec jekyll serve --drafts --unpublished --future --host 0.0.0.0 --livereload --livereload-max-delay 10 -d _site
 else
